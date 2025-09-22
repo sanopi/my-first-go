@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-var hello = "hello"
+const hello = "hello"
 
 func main() {
 	world := "world"
