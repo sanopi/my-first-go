@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+var hello = "hello"
+
 func main() {
-	fmt.Println("hello, world!")
+	world := "world"
+	fmt.Println(hello + ", " + world + "!")
 }
