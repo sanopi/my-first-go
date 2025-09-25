@@ -2,7 +2,8 @@ package main
 
 func main() {
 	// evenOdd()
-	swapping1()
+	// swapping1()
+	swapping2()
 }
 
 func evenOdd() {
@@ -27,4 +28,14 @@ func swapping1() {
 
 func swap(a int, b int) (int, int) {
 	return b, a
+}
+
+func swapping2() {
+	n, m := 10, 20
+	swap2(&n, &m)
+	println(n, m) // 20, 10
+}
+
+func swap2(a *int, b *int) {
+	*a, *b = *b, *a
 }
