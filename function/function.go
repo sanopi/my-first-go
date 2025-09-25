@@ -1,7 +1,8 @@
 package main
 
 func main() {
-	evenOdd()
+	// evenOdd()
+	swapping1()
 }
 
 func evenOdd() {
@@ -17,4 +18,13 @@ func evenOdd() {
 
 func isEven(i int) bool {
 	return i%2 == 0
+}
+
+func swapping1() {
+	n, m := swap(10, 20)
+	println(n, m)
+}
+
+func swap(a int, b int) (int, int) {
+	return b, a
 }
